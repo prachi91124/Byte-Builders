@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Sign in</title>
+    <link type="image/png" sizes="32x32" rel="icon"
+        href="https://img.icons8.com/fluency/48/person-male.png">
+        
+    <link type="image/png" sizes="32x32" rel="icon" href="https://img.icons8.com/3d-fluency/94/satellites.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/508e2c6038.js" crossorigin="anonymous"></script>
+    <style>
+        
+        #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  height: 100vh;
+  object-fit: cover;
+}
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            
+        }
+        .container {
+            width: 45%;
+            height: 100vh;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        
+            background-color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.311);
+            
+        }
+        .container form {
+            max-width: 500px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            background-color: rgb(6, 202, 6);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+
+        input{
+            transition: all 0.3s ease-out;    
+        }
+        input:hover{
+            transform: scale(1.2);
+        }
+        .socialicons{
+            /* justify-content: center; */
+            /* align-items: center; */
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="Logo.png">
+
+        <nav>
+            <div class="tags">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="pkgs.html">Packages</a></li>
+                    <li><a href="signin.html">Sign In</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <video autoplay muted loop id="myVideo">
+        <source src="/cg_animation_of_rocket_taking_off (720p).mp4" type="video/mp4">
+      </video>
+    <div class="container">
+        <form>
+            <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sign-In Here!</h1>
+
+            <div class="socialicons">
+                <table>
+                    <tr>
+                        <td><img width="32" height="32" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/></td>
+                        <td><img width="32" height="32" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></td>
+                        <td><img width="32" height="32" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></td>
+                    </tr>
+                </table>
+                    </div>
+                    <hr style="width:100%;text-align:left;margin-left:0">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <br>
+                <input type="text" id="email" name="email" required title="Enter Your Email" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <br>
+                
+                <input type="text" id="email" name="email" required title="Enter Password" placeholder="Enter Password">
+            </div>
+            <div class="form-group">
+                <table>
+                <tr style="padding: 100px;;"><td><input type="checkbox">
+                <label for="save" style="font-size: small;">Keep me logged in</label>
+            </td>
+            <td>
+                <a href="#" style="color: rgb(188, 0, 103); font-size: small; font-style: bold;">Forgot Password?</a>
+            </td>
+            </tr>
+            </table>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign In</button>
+            </div>
+            <!-- <hr> -->
+
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="bottom-links">
+            <div class="links">
+                <span>More Info</span>
+                <a href="/home .html">Home</a>
+                <a href="pkgs.html">Packages</a>
+                <a href="signin.html">Sign In </a>
+            </div>
+            <div class="links">
+                <span style="color: white;">Social Links</span>
+                <a><i class="fa-brands fa-facebook-f"></i>Facebook</a>
+                <a><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+                <a><i class="fa-brands fa-instagram"></i>Instagram</a>
+            </div>
+        </div>
+        <div class="reserved" style="text-align: center; color: white;">&copy; Orion Trail Tours | All rights reserved
+        </div>
+    </footer>
+
+   
+
+</body>
+
+</html>

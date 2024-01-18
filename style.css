@@ -197,3 +197,56 @@ video{
     font-style: bold;
     
   }
+  .cardcontainer{
+    position:relative;
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 30px;
+    /* margin-top: 100px; */
+    padding-top: 150px;
+    margin-bottom: 20px;
+  }
+ 
+  .card{
+    border: #040008 5px;
+    border-radius: 2px;
+    position: relative;
+    /* padding: 140px; */
+    justify-content: center;
+    /* grid-template-columns: auto auto; */
+    display: block;
+    font-family:Patrick Hand;
+    font-size: 20px;
+  }
+ 
+  .cardcontainer .container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin: left 100px;
+  } 
+  .container .image {
+    align-items: center;
+    position: relative;
+    /* padding:150px; */
+    /* padding-top: 150px; */
+    display:block;
+    /* margin-top: 100px; */
+
+  
+    /* align-items: center; */
+    height: fit-content;
+    justify-content: center;
+    margin-left: 10px;
+
+  }
+  .explorebutton{
+    height: max-content;
+    font-size: 20px;
+    color:#fff;
+    width: max-content;
+    background-color: #040008;
+    padding: 8px;
+    border-radius: 10%;
+
+  }
