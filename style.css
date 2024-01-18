@@ -11,242 +11,263 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Rubik+Doodle+Shadow&family=Zeyada&display=swap');
 
 
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    height: 100vh;
-    overflow-x: hidden;
-    /* width: max-content; */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-header{
-    background-image: linear-gradient(to right, #040008 0%, #1e232c 100%);
-    width: 100%;
-    height: max-content;
-    position: fixed !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Domine;
-    padding: 1vh;
-    box-shadow:  0 0 25vh 0 black;
-    align-self: auto;
-    text-align: center;
-    transform: all 0.3s ease-in-out;
-    margin-right: auto;
-    margin-left: auto;
-    z-index: 1;
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-header *{
-    display: inline;
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  /* width: max-content; */
 }
-header img{
-    position: relative;
-    width: 120px;
-    height: 90px;
-    /* display: flex; */
-    padding: 0;
+
+header {
+  background-image: linear-gradient(to right, #040008 0%, #1e232c 100%);
+  width: 100%;
+  height: max-content;
+  position: fixed !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Domine;
+  padding: 1vh;
+  box-shadow: 0 0 25vh 0 black;
+  align-self: auto;
+  text-align: center;
+  transform: all 0.3s ease-in-out;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 1;
+  scroll-behavior: smooth;
+}
+
+header * {
+  display: inline;
+}
+
+header img {
+  position: relative;
+  width: 120px;
+  height: 90px;
+  /* display: flex; */
+  padding: 0;
 
 }
-header .tags{
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    /* display: flex; */
-    
-}
-header .tags a{
-    text-decoration: none;
-    color: aliceblue;
-    font-weight: 400;
-}
-header .tags ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    font-size: 2.5vh;
-    padding: 15px;
-    flex-wrap: nowrap;
-    align-items: center;
+
+header .tags {
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  /* display: flex; */
 
 }
-header .tags li{
-    padding-bottom: 0 !important;
+
+header .tags a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 400;
 }
-header .tags a:hover{
-    text-decoration-thickness: 900px;
-    color: rgb(119, 131, 141);
-}
-.video-container{
-    padding-top: 3vh;
-    width: 100%;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    
-    
-}
-video{
-    height: 751px;
-    object-fit:cover;
-    position: relative;
-    width: 100%;
-    z-index: -1;
-}
-.text-overlay{
-    justify-content: center;
-    top:40vh;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-    color: #fff;
-    text-align: center;
+
+header .tags ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  font-size: 2.5vh;
+  padding: 15px;
+  flex-wrap: nowrap;
+  align-items: center;
 
 }
-.text-overlay h1{
-    font-size: 6vh;
-    font-family: Patrick Hand;
-    
+
+header .tags li {
+  padding-bottom: 0 !important;
 }
-.text-overlay h1 span{
-    font-family: Rubik Doodle Shadow;
-    font-size: 18vh;
+
+header .tags a:hover {
+  text-decoration-thickness: 900px;
+  color: rgb(119, 131, 141);
+}
+
+.video-container {
+  padding-top: 3vh;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+video {
+  height: 751px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+.text-overlay {
+  justify-content: center;
+  top: 40vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+
+}
+
+.text-overlay h1 {
+  font-size: 6vh;
+  font-family: Patrick Hand;
+
+}
+
+.text-overlay h1 span {
+  font-family: Rubik Doodle Shadow;
+  font-size: 18vh;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    padding: 40px 80px;
-    width: 100%;
-  }
-  
-  .footer .copy {
-    color: #fff;
-  }
-  
-  .bottom-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px 0;
-  }
-  
-  .bottom-links .links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 40px;
-    position: relative;
-    line-height: 30px;
-    gap: 5px;
-    margin-left: 5px;
-  }
-  
-  .bottom-links .links span {
-    font-size: 20px;
-    color: #fff;
-    text-transform: uppercase;
-    margin: 10px 0;
-  }
-  
-  .bottom-links .links a {
-    text-decoration: none;
-    color:#fff;
-    display: flex;
-    align-items: center;
-    position: relative;
-    /* padding: 10px 20px; */
-    line-height: 50px;
-  }
-  .bottom-links .links a i{
-    margin-right: 10px;
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 40px 80px;
+  width: 100%;
+}
 
-  .para{
-    color: #040008;
-    font-family: Patrick Hand;
-    line-height: 55px;
-    padding: 30px;
-    font-size: 5vh;
-    margin: 30px;
-  }
-  h1{
-    text-align: center;
-    font: bold;
-    padding-bottom: 20px;
-  }
-  li{
-    padding-bottom: 20px;
-  }
-  li span{
-    font-style: bold;
-    
-  }
-  .cardcontainer{
-    position:relative;
-    display: grid;
-    grid-template-columns: auto ;
-    gap: 30px;
-    /* margin-top: 100px; */
-    padding-top: 150px;
-    margin-bottom: 20px;
-  }
- 
-  .card{
-    border: #040008 5px;
-    border-radius: 2px;
-    position: relative;
-    /* padding: 140px; */
-    justify-content: center;
-    /* grid-template-columns: auto auto; */
-    display: block;
-    font-family:Patrick Hand;
-    font-size: 20px;
-  }
- 
-  .cardcontainer .container{
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    margin: left 100px;
-  } 
-  .container .image {
-    align-items: center;
-    position: relative;
-    /* padding:150px; */
-    /* padding-top: 150px; */
-    display:block;
-    /* margin-top: 100px; */
+.footer .copy {
+  color: #fff;
+}
 
-  
-    /* align-items: center; */
-    height: fit-content;
-    justify-content: center;
-    margin-left: 10px;
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
 
-  }
-  .explorebutton{
-    height: max-content;
-    font-size: 20px;
-    color:#fff;
-    width: max-content;
-    background-color: #040008;
-    padding: 8px;
-    border-radius: 10%;
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  position: relative;
+  line-height: 30px;
+  gap: 5px;
+  margin-left: 5px;
+}
 
-  }
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* padding: 10px 20px; */
+  line-height: 50px;
+}
+
+.bottom-links .links a i {
+  margin-right: 10px;
+}
+
+.para {
+  color: #040008;
+  font-family: Patrick Hand;
+  line-height: 55px;
+  padding: 30px;
+  font-size: 5vh;
+  margin: 30px;
+}
+
+h1 {
+  text-align: center;
+  font: bold;
+  padding-bottom: 20px;
+}
+
+li {
+  padding-bottom: 20px;
+}
+
+li span {
+  font-style: bold;
+
+}
+
+.cardcontainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 30px;
+  /* margin-top: 100px; */
+  padding-top: 150px;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: #040008 5px;
+  border-radius: 2px;
+  position: relative;
+  /* padding: 140px; */
+  justify-content: center;
+  /* grid-template-columns: auto auto; */
+  display: block;
+  font-family: Patrick Hand;
+  font-size: 20px;
+}
+
+.cardcontainer .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  margin: left 100px;
+}
+
+.container .image {
+  align-items: center;
+  position: relative;
+  /* padding:150px; */
+  /* padding-top: 150px; */
+  display: block;
+  /* margin-top: 100px; */
+
+
+  /* align-items: center; */
+  height: fit-content;
+  justify-content: center;
+  margin-left: 10px;
+
+}
+
+.explorebutton {
+  height: max-content;
+  font-size: 20px;
+  color: #fff;
+  width: max-content;
+  background-color: #040008;
+  padding: 8px;
+  border-radius: 10%;
+
+}
