@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Sacramento&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/508e2c6038.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="Logo.png" >
+
+        <nav>
+            <div class="tags">
+                <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="pkgs.html">Packages</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+        </ul>
+        </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="video (1080p).mp4" type="video/mp4">
+            </video>
+            <div class="text-overlay">
+                <h1 style="font-family:Sacramento ; ">Plan a perfect holiday with <br><span style="font-family:Monoton; ">Orion Trail Tours</span>
+                </h1>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="bottom-links">
+          <div class="links">
+            <span>More Info</span>
+            <a href="home.html">Home</a>
+            <a href="pkgs.html">Packages</a>
+            <a href="signin.html">Sign In           </a>
+          </div>
+          <div class="links">
+            <span style="color: white;">Social Links</span>
+            <a><i class="fa-brands fa-facebook-f"></i>Facebook</a>
+            <a><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+            <a><i class="fa-brands fa-instagram"></i>Instagram</a>
+          </div>
+        </div>
+        <div class="reserved" style="text-align: center; color: white;">&copy; Orion Trail Tours | All rights reserved</div>
+      </footer>
+      <script>
+        window.scroll({
+          top: 2500,
+          left: 0,
+          behavior: 'smooth'
+        });
+    
+        // Scroll certain amounts from current position 
+        window.scrollBy({
+          top: 100, // could be negative value
+          left: 0,
+          behavior: 'smooth'
+        });
+    
+        // Scroll to a certain element
+        document.querySelector('.hello').scrollIntoView({
+          behavior: 'smooth'
+        });
+      </script>
+</body>
+</html>
