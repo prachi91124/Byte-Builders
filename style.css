@@ -7,6 +7,10 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Rubik+Doodle+Shadow&family=Zeyada&display=swap');
+
+
 *{
     padding:0;
     margin:0;
@@ -73,7 +77,11 @@ header .tags ul{
     font-size: 2.5vh;
     padding: 15px;
     flex-wrap: nowrap;
+    align-items: center;
 
+}
+header .tags li{
+    padding-bottom: 0 !important;
 }
 header .tags a:hover{
     text-decoration-thickness: 900px;
@@ -83,6 +91,8 @@ header .tags a:hover{
     padding-top: 3vh;
     width: 100%;
     position: relative;
+    align-items: center;
+    justify-content: center;
     
     
 }
@@ -91,9 +101,27 @@ video{
     object-fit:cover;
     position: relative;
     width: 100%;
+    z-index: -1;
 }
 .text-overlay{
-    position: relative;
+    justify-content: center;
+    top:40vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+
+}
+.text-overlay h1{
+    font-size: 6vh;
+    font-family: Patrick Hand;
+    
+}
+.text-overlay h1 span{
+    font-family: Rubik Doodle Shadow;
+    font-size: 18vh;
 }
 
 .footer {
@@ -148,4 +176,24 @@ video{
   .bottom-links .links a i{
     margin-right: 10px;
   }
-  
+
+  .para{
+    color: #040008;
+    font-family: Patrick Hand;
+    line-height: 55px;
+    padding: 30px;
+    font-size: 5vh;
+    margin: 30px;
+  }
+  h1{
+    text-align: center;
+    font: bold;
+    padding-bottom: 20px;
+  }
+  li{
+    padding-bottom: 20px;
+  }
+  li span{
+    font-style: bold;
+    
+  }
