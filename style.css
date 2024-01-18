@@ -95,6 +95,7 @@ header .tags li {
 header .tags a:hover {
   text-decoration-thickness: 900px;
   color: rgb(119, 131, 141);
+  transform: scale(1.5);
 }
 
 .video-container {
@@ -136,6 +137,7 @@ video {
 .text-overlay h1 span {
   font-family: Rubik Doodle Shadow;
   font-size: 18vh;
+  /* transition: all 0.5s ease-in-out; */
 }
 
 .footer {
@@ -269,6 +271,7 @@ li span {
   background-color: #040008;
   padding: 8px;
   border-radius: 10%;
+  
 
 }
 #next, #prev{
