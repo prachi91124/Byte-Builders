@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Sign in</title>
     <link type="image/png" sizes="32x32" rel="icon" href="https://img.icons8.com/fluency/48/person-male.png">
-
     <link type="image/png" sizes="32x32" rel="icon" href="https://img.icons8.com/3d-fluency/94/satellites.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +30,6 @@
             margin: 0;
             padding: 0;
             background-color: black;
-
         }
 
         .container {
@@ -104,6 +102,41 @@
             /* align-items: center; */
             align-content: center;
         }
+
+        .modal {
+            display: grid;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(12, 12, 14);
+            padding: 20px;
+            border: 2px solid #ccc;
+            z-index: 2;
+            color: #fff;
+            max-width: 400px;
+            width: 80%;
+            text-align: center;
+            font-size: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        #se {
+            width: 40%;
+            padding: 10px 20px;
+            background-color: rgb(6, 202, 6);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            margin: 20px auto;
+        }
+
+        #se button:hover {
+            background-color: #063909;
+        }
     </style>
 </head>
 
@@ -114,9 +147,9 @@
         <nav>
             <div class="tags">
                 <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="pkgs.html">Packages</a></li>
-                    <li><a href="signin.html">Sign In</a></li>
+                    <li><a href="/ home .html">Home</a></li>
+                    <li><a href="/pkgs.html">Packages</a></li>
+                    <li><a href="/signin.html">Sign In</a></li>
                 </ul>
             </div>
         </nav>
@@ -151,7 +184,8 @@
                 <label for="password">Password</label>
                 <br>
 
-                <input type="text" id="email" name="email" required title="Enter Password" placeholder="Enter Password">
+                <input type="text" id="password" name="email" required title="Enter Password"
+                    placeholder="Enter Password">
             </div>
             <div class="form-group">
                 <table>
@@ -167,19 +201,26 @@
                 </table>
             </div>
             <div class="form-group">
-                <button type="submit">Sign In</button>
+                <button type="submit" onclick="validateForm() " class="closebutton">Sign In</button>
             </div>
             <!-- <hr> -->
 
         </form>
     </div>
+    <!-- Modal -->
+    <div id="successModal" class="modal" style="display:none;">
+        <p>Sign in successful! Welcome to Orion Trio Tours <br>Check Your Details</p>
+        <p id="modalEmail"></p>
+        <p id="modalPassword"></p>
+        <button onclick="closeModal()" id="se">Close</button>
+    </div>
     <footer class="footer">
         <div class="bottom-links">
             <div class="links">
                 <span>More Info</span>
-                <a href="/home .html">Home</a>
-                <a href="/pkgs.html">Packages</a>
-                <a href="/signin.html">Sign In </a>
+                <a href="home .html">Home</a>
+                <a href="pkgs.html">Packages</a>
+                <a href="signin.html">Sign In </a>
             </div>
             <div class="links">
                 <span style="color: white;">Social Links</span>
@@ -190,9 +231,39 @@
         </div>
         <div class="reserved" style="text-align: center; color: white;">&copy; Orion Trail Tours | All rights reserved
         </div>
+
     </footer>
+    <script>
+        function validateForm() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
 
+            // Simple validation for demonstration purposes
+            if (email.trim() === '' || password.trim() === '') {
+                alert('Please enter both email and password.');
+            } else {
+                // Display entered details in the modal
+                document.getElementById('modalEmail').innerText = 'Email: ' + email;
+                document.getElementById('modalPassword').innerText = 'Password: ' + password;
 
+                // Show success modal
+                document.getElementById('successModal').style.display = 'block';
+                setTimeout(function () {
+                    closeModal();
+
+                }, 30000);
+            }
+        }
+
+        function closeModal() {
+            // Close the modal
+            document.getElementById('successModal').style.display = 'none';
+
+            // Reset modal content
+            document.getElementById('modalEmail').innerText = '';
+            document.getElementById('modalPassword').innerText = '';
+        }
+    </script>
 
 </body>
 
